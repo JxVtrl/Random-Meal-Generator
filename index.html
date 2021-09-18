@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gerador de Receitas</title>
+</head>
+<body>
+    <!-- Loader -->
+    <div id="loading" class="loading"><div class="circle"></div><div class="circle"></div><div class="circle"></div></div>
+
+    <!-- Main Content -->
+    <main id="main" class="container hide">
+        <!-- Informações Iniciais -->
+        <div class="row first-info">
+            <h3>Se sentindo com fome?</h3>
+            <h5>Encontre uma receita para você clicando no botão abaixo!</h5>
+            <button class="button" id="get_meal">Gerar Receita 🥞</button>
+        </div>
+
+        <!-- Onde a receita será gerada -->
+        <div id="meal" class="row meal"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
