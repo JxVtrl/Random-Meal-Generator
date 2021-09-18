@@ -55,20 +55,22 @@ const createMeal = meal => {
                     ${meal.strCategory ? `<p><strong>Category:</strong> ${meal.strCategory}</p>` : ''}
                     ${meal.strTags ? `<p><strong>Tags:</strong> ${meal.strTags.split(',').join(', ')}</p>` : ''}
                 </div>
-				<h5>Ingredients:</h5>
-				<ul>
-					${ingredients.map(ingredient => `<li>${ingredient}</li>`).join('')}
-				</ul>
+                <div id="ingredients-container">
+                    <h5>Ingredients:</h5>
+                    <ul id="ingredients-list">
+                        ${ingredients.map(ingredient => `<li>${ingredient}</li>`).join('')}
+                    </ul>
+                </div>
 			</div>
-			<div class="columns seven">
-				<h4>${meal.strMeal}</h4>
+			<div id="instruct-container" class="columns seven">
+				<h3>${meal.strMeal}</h3>
 				<p>${meal.strInstructions}</p>
 			</div>
 		</div>
 
 		${meal.strYoutube ? `
 		<div class="row">
-			<h5>Video Recipe</h5>
+			<h5 id="video-title">Video Recipe</h5>
 			<div class="videoWrapper">
 				<iframe width="420" height="315"
 				src="https://www.youtube.com/embed/${meal.strYoutube.slice(-11)}">

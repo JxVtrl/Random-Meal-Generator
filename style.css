@@ -114,3 +114,32 @@ body{
 
     width: fit-content;
 }
+
+#ingredients-container{
+    width: 65vw;
+    
+    margin: 20px auto;
+}
+
+#ingredients-container > h5{
+    transform: translateX(-25px);
+}
+
+#instruct-container{
+    width: 70vw;
+    margin: 20px auto;
+}
+
+#ingredients-list{
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+.videoWrapper{
+    margin: 15px auto;
+    width: fit-content;
+}
+
+#video-title{
+    text-align: center;
+}
